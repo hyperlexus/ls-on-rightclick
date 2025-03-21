@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+; Right-click on a folder
+[HKEY_CLASSES_ROOT\Directory\shell\OpenPowerShellLS]
+@="Open PowerShell and Run ls"
+"Icon"="C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+
+[HKEY_CLASSES_ROOT\Directory\shell\OpenPowerShellLS\command]
+@="powershell.exe -NoExit -Command \"cd '%V'; Get-ChildItem -Force\""
+
+; Right-click inside a folder (background menu)
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OpenPowerShellLS]
+@="Open PowerShell and Run ls"
+"Icon"="C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OpenPowerShellLS\command]
+@="powershell.exe -NoExit -Command \"Get-ChildItem -Force\""
