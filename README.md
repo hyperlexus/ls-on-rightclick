@@ -1,5 +1,5 @@
 # ls-on-rightclick
-windows 11 registry file to add an option to the context menu. 
+windows 11 registry file to add an option to the context menu that runs POSIX shell `ls` in the current folder. 
 
 ## how to use
 press shift+rightclick to see all options, then click "Open PowerShell and Run ls".<br>
